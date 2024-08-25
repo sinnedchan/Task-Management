@@ -1,7 +1,12 @@
-import "./App.css";
+import Form from "./Form";
 
 function App() {
-  return <>Task Management</>;
+  return (
+    <>
+      <h1>Task Management App</h1>
+      <Form />
+    </>
+  );
 }
 
 export default App;

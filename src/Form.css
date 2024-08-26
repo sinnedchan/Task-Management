@@ -1,17 +1,22 @@
 .createtaskbox {
   display: grid;
-  column-gap: 50px;
-  row-gap: 50px;
+  grid-template-columns: auto;
+  gap: 10px;
 }
 .taskinputgrid1 {
+  align-items: center;
   grid-column-start: 1;
   grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
   border: solid;
 }
 
 .descriptioninputgrid2 {
   grid-column-start: 2;
   grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
   border: solid;
 }
 
@@ -27,6 +32,11 @@
   border: solid;
 }
 
+.createbutton {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+}
 .tasklabel {
   writing-mode: tb-rl;
   transform: rotate(180deg);

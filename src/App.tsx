@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Form from "./Form";
+import "./App.css";
 
 interface Task {
   id: number;
@@ -49,7 +50,7 @@ const App: React.FC = () => {
 
   return (
     <div>
-      <h1>Task Management App</h1>
+      <h1 className="mainheader">Task Management App</h1>
       {editTask ? (
         <div>
           <h2>Edit Task</h2>

@@ -1,0 +1,38 @@
+.createtaskbox {
+  display: grid;
+  column-gap: 50px;
+  row-gap: 50px;
+}
+.taskinputgrid1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  border: solid;
+}
+
+.descriptioninputgrid2 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  border: solid;
+}
+
+.startgrid3 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  border: solid;
+}
+
+.endgrid4 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  border: solid;
+}
+
+.tasklabel {
+  writing-mode: tb-rl;
+  transform: rotate(180deg);
+}
+
+.desclabel {
+  writing-mode: tb-rl;
+  transform: rotate(180deg);
+}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./form.css";
 
 interface TaskFormProps {
   onSubmit: (
@@ -39,9 +40,9 @@ const TaskForm: React.FC<TaskFormProps> = ({
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Title:</label>
+    <form className="createtaskbox" onSubmit={handleSubmit}>
+      <div className="taskinputgrid1">
+        <label className="tasklabel">Task</label>
         <input
           type="text"
           id="title"
@@ -50,8 +51,8 @@ const TaskForm: React.FC<TaskFormProps> = ({
         />
       </div>
 
-      <div>
-        <label>Description:</label>
+      <div className="descriptioninputgrid2">
+        <label className="desclabel">Description</label>
         <textarea
           id="description"
           value={description}
@@ -59,7 +60,7 @@ const TaskForm: React.FC<TaskFormProps> = ({
         />
       </div>
 
-      <div>
+      <div className="startgrid3">
         <label>Start Date:</label>
         <input
           type="date"
@@ -69,7 +70,7 @@ const TaskForm: React.FC<TaskFormProps> = ({
         />
       </div>
 
-      <div>
+      <div className="endgrid4">
         <label>End Date:</label>
         <input
           type="date"

@@ -43,8 +43,8 @@ const TaskForm: React.FC<TaskFormProps> = ({
     <form className="createtaskbox" onSubmit={handleSubmit}>
       <div className="taskinputgrid1">
         <label className="tasklabel">Task</label>
-        <input
-          type="text"
+        <textarea
+          className="taskinputarea"
           id="title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
@@ -54,6 +54,7 @@ const TaskForm: React.FC<TaskFormProps> = ({
       <div className="descriptioninputgrid2">
         <label className="desclabel">Description</label>
         <textarea
+          className="descinputarea"
           id="description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}

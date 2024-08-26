@@ -49,7 +49,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="appmain">
       <h1 className="mainheader">Task Management App</h1>
       {editTask ? (
         <div>
@@ -72,13 +72,20 @@ const App: React.FC = () => {
       <h2>Tasks</h2>
       <div>
         {tasks.map((task) => (
-          <div>
-            <h3>{task.title}</h3>
-            <p>{task.description}</p>
-            <p>Start Date: {task.startDate}</p>
-            <p>End Date: {task.endDate}</p>
-            <button onClick={() => handleEditTask(task)}>Edit</button>
-            <button onClick={() => handleDeleteTask(task.id)}>Delete</button>
+          <div className="taskcard">
+            <h3 className="taskgrid1">{task.title}</h3>
+            <p className="descgrid2">{task.description}</p>
+            <p className="startgrid3">Start Date: {task.startDate}</p>
+            <p className="endgrid4">End Date: {task.endDate}</p>
+            <button className="editbutton" onClick={() => handleEditTask(task)}>
+              Edit
+            </button>
+            <button
+              className="deletebutton"
+              onClick={() => handleDeleteTask(task.id)}
+            >
+              Delete
+            </button>
           </div>
         ))}
       </div>

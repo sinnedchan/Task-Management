@@ -1,3 +1,8 @@
+.appmain {
+  max-width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
 .mainheader {
   border-style: solid;
   padding: 40px;
@@ -10,6 +15,46 @@
   text-align: center;
 }
 
-.createtaskbox {
-  border-style: solid;
+.taskcard {
+  border: solid;
+  display: grid;
+  grid-template-columns: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.taskgrid1 {
+  display: grid;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  text-align: center;
+}
+
+.descgrid2 {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+  padding: 16px;
+  margin: 0px;
+}
+
+.startgrid3 {
+  text-align: center;
+}
+
+.endgrid4 {
+  text-align: center;
+}
+
+.editbutton {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.deletebutton {
+  grid-column-start: 4;
+  grid-column-end: 7;
 }

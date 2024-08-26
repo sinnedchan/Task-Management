@@ -2,47 +2,63 @@
   display: grid;
   grid-template-columns: auto;
   gap: 10px;
+  border: solid;
 }
 .taskinputgrid1 {
+  display: grid;
   align-items: center;
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 1;
   grid-row-end: 3;
-  border: solid;
+  margin: 5px;
 }
 
 .descriptioninputgrid2 {
+  display: grid;
+  align-items: center;
   grid-column-start: 2;
-  grid-column-end: 2;
+  grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 3;
-  border: solid;
+  margin: 5px;
 }
 
 .startgrid3 {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  border: solid;
+  display: grid;
+  align-items: center;
+  grid-column-start: 6;
+  grid-column-end: 6;
+  margin: 5px;
 }
 
 .endgrid4 {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  border: solid;
+  display: grid;
+  align-items: center;
+  grid-column-start: 6;
+  grid-column-end: 6;
+  margin: 5px;
 }
 
 .createbutton {
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 7;
   grid-row-start: 3;
 }
 .tasklabel {
-  writing-mode: tb-rl;
-  transform: rotate(180deg);
+  text-align: center;
 }
 
 .desclabel {
-  writing-mode: tb-rl;
-  transform: rotate(180deg);
+  text-align: center;
+}
+
+.taskinputarea {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.descinputarea {
+  align-items: center;
 }

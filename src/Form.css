@@ -1,8 +1,13 @@
 .createtaskbox {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   display: grid;
   grid-template-columns: auto;
   gap: 10px;
-  border: solid;
+  border: solid, 1px;
+  border-color: rgb(228, 228, 228);
+  border-radius: 10px;
 }
 .taskinputgrid1 {
   display: grid;
@@ -44,6 +49,15 @@
   grid-column-start: 1;
   grid-column-end: 7;
   grid-row-start: 3;
+  color: white;
+  background-color: rgb(65, 122, 255);
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border: 0px;
+  padding: 5px;
+}
+.createbutton:hover {
+  background: rgb(30, 97, 255);
 }
 .tasklabel {
   text-align: center;

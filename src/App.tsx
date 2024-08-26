@@ -50,10 +50,9 @@ const App: React.FC = () => {
 
   return (
     <div className="appmain">
-      <h1 className="mainheader">Task Management App</h1>
+      <h1 className="mainheader">Real-Time Task Management App</h1>
       {editTask ? (
         <div>
-          <h2>Edit Task</h2>
           <Form
             onSubmit={handleTaskSubmit}
             initialTitle={editTask.title}
@@ -64,16 +63,15 @@ const App: React.FC = () => {
         </div>
       ) : (
         <div>
-          <h2>Create Task</h2>
           <Form onSubmit={handleTaskSubmit} />
         </div>
       )}
 
-      <h2>Tasks</h2>
+      <h2>Your Tasks:</h2>
       <div>
         {tasks.map((task) => (
           <div className="taskcard">
-            <h3 className="taskgrid1">{task.title}</h3>
+            <h4 className="taskgrid1">{task.title}</h4>
             <p className="descgrid2">{task.description}</p>
             <p className="startgrid3">Start Date: {task.startDate}</p>
             <p className="endgrid4">End Date: {task.endDate}</p>

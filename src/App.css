@@ -4,7 +4,9 @@
   margin-top: 30px;
 }
 .mainheader {
-  border-style: solid;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   padding: 40px;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -14,13 +16,25 @@
   margin: auto;
   text-align: center;
 }
+h2 {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+}
 
 .taskcard {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   border: solid;
   display: grid;
   grid-template-columns: auto;
   margin-top: 15px;
   margin-bottom: 15px;
+  border-color: rgb(228, 228, 228);
+  border-radius: 10px;
 }
 
 .taskgrid1 {
@@ -52,9 +66,26 @@
 .editbutton {
   grid-column-start: 1;
   grid-column-end: 4;
+  color: white;
+  background-color: rgb(255, 196, 93);
+  border-bottom-left-radius: 9px;
+  border: 0px;
+  padding: 5px;
+}
+.editbutton:hover {
+  background: rgb(255, 182, 56);
 }
 
 .deletebutton {
   grid-column-start: 4;
   grid-column-end: 7;
+  color: white;
+  background-color: red;
+  border-bottom-right-radius: 9px;
+  border: 0px;
+  padding: 5px;
+}
+
+.deletebutton:hover {
+  background: rgb(231, 0, 0);
 }

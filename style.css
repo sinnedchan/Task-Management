@@ -1,5 +1,10 @@
-/* html {
-  height: 100%;
-  background-color: blue;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 33%, white 10%);
-} */
+html {
+  height: 100vh;
+  background: linear-gradient(
+    to top,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 68%,
+    rgb(139, 207, 255) 68%,
+    rgb(139, 207, 255) 100%
+  );
+}

@@ -62,7 +62,7 @@ const TaskForm: React.FC<TaskFormProps> = ({
       </div>
 
       <div className="startgrid3">
-        <label>Start Date:</label>
+        <label className="startlabel">Start Date:</label>
         <input
           type="date"
           id="startDate"
@@ -72,7 +72,7 @@ const TaskForm: React.FC<TaskFormProps> = ({
       </div>
 
       <div className="endgrid4">
-        <label>End Date:</label>
+        <label className="endlabel">End Date:</label>
         <input
           type="date"
           id="endDate"

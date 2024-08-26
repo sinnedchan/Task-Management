@@ -8,6 +8,7 @@
   border: solid, 1px;
   border-color: rgb(228, 228, 228);
   border-radius: 10px;
+  background-color: white;
 }
 .taskinputgrid1 {
   display: grid;
@@ -37,6 +38,9 @@
   margin: 5px;
 }
 
+.startlabel {
+  font-size: 15px;
+}
 .endgrid4 {
   display: grid;
   align-items: center;
@@ -45,6 +49,9 @@
   margin: 5px;
 }
 
+.endlabel {
+  font-size: 15px;
+}
 .createbutton {
   grid-column-start: 1;
   grid-column-end: 7;

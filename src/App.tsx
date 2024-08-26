@@ -71,10 +71,16 @@ const App: React.FC = () => {
       <div>
         {tasks.map((task) => (
           <div className="taskcard">
-            <h4 className="taskgrid1">{task.title}</h4>
+            <p className="taskgrid1">{task.title}</p>
             <p className="descgrid2">{task.description}</p>
-            <p className="startgrid3">Start Date: {task.startDate}</p>
-            <p className="endgrid4">End Date: {task.endDate}</p>
+            <p className="startgrid3">
+              Start Date:<p className="startgriddate">{task.startDate}</p>
+            </p>
+
+            <p className="endgrid4">
+              End Date:<p className="endgriddate">{task.endDate}</p>
+            </p>
+
             <button className="editbutton" onClick={() => handleEditTask(task)}>
               Edit
             </button>

@@ -1,12 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
 .appmain {
   max-width: 60%;
   margin: auto;
   margin-top: 30px;
 }
 .mainheader {
-  font-family: "Poppins", sans-serif;
+  font-family: "Jersey 10", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: white;
   padding: 40px;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -19,9 +21,10 @@
 h2 {
   font-size: 20px;
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   font-style: normal;
   text-align: center;
+  color: white;
 }
 
 .taskcard {
@@ -35,9 +38,13 @@ h2 {
   margin-bottom: 15px;
   border-color: rgb(228, 228, 228);
   border-radius: 10px;
+  background-color: white;
 }
 
 .taskgrid1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   display: grid;
   grid-column-start: 3;
   grid-column-end: 4;
@@ -57,10 +64,21 @@ h2 {
 
 .startgrid3 {
   text-align: center;
+  font-size: 10px;
 }
 
+.startgriddate {
+  font-size: 15px;
+  margin: 5px;
+}
 .endgrid4 {
   text-align: center;
+  font-size: 10px;
+}
+
+.endgriddate {
+  font-size: 15px;
+  margin: 5px;
 }
 
 .editbutton {
